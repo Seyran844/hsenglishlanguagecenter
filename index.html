@@ -1,25 +1,205 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="hy">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мама</title>
+    <title>HS English Language Center</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
+            background: #e6f7ff;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            background: #4da6ff;
+            padding: 20px;
+        }
+
+        header img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            color: white;
+            margin: 10px 0;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #005bb5;
+        }
+
+        .gallery {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f9f9f9;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        h1 {
-            color: red;
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border: 5px solid #0073e6;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video {
+            margin-top: 20px;
+        }
+
+        .video video {
+            width: 300px;
+            border: 5px solid #0073e6;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        footer a:first-of-type {
+            color: #25d366; /* Зеленый для WhatsApp */
+            animation: blink 1s infinite;
+        }
+
+        footer a:last-of-type {
+            color: #7c4dff; /* Фиолетовый для Viber */
+            animation: blink 1s infinite;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Background Animation */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .animated-object {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: white;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) translateX(0);
+            }
+            50% {
+                transform: translateY(50vh) translateX(100px);
+            }
+            100% {
+                transform: translateY(-50px) translateX(-100px);
+            }
+        }
+
+        .highlight-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            animation: color-change 3s infinite;
+        }
+
+        @keyframes color-change {
+            0% { color: red; }
+            33% { color: green; }
+            66% { color: blue; }
+            100% { color: yellow; }
+        }
+
+        .red-ball {
+            background-color: red;
+        }
+
+        .yellow-ball {
+            background-color: yellow;
+        }
+
+        .green-ball {
+            background-color: green;
         }
     </style>
 </head>
 <body>
-    <h1>Я люблю тебя, моя мама</h1>
+    <div class="background">
+        <div class="animated-object red-ball"></div>
+        <div class="animated-object yellow-ball"></div>
+        <div class="animated-object green-ball"></div>
+    </div>
+
+    <header>
+        <img src="logo.jpg" alt="HS English Language Center">
+        <h1>HS English Language Center</h1>
+    </header>
+
+    <div class="content">
+        <p>Մենք աշխատում ենք երեխաների և մեծահասակների հետ՝ առաջարկելով անգլերենի տարբեր մակարդակներ, ինչպես նաև ռուսերենի դասեր և դպրոցական առարկաների հետ կապված օգնություն:</p>
+
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Դասասենյակ">
+            <img src="photo2.jpg" alt="Ուսուցիչ ուսանողներով">
+        </div>
+
+        <div class="video">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Ձեր դիտարկիչը չի աջակցում տեսանյութերի ցուցադրմանը:
+            </video>
+        </div>
+
+        <p>Մեր կենտրոնը մեծ հաճույքով ընդունում է նոր ուսանողներ և աշխատում է առանց հանգստյան օրերի: Մենք ունենք փորձառու ուսուցիչներ, ովքեր սիրում են աշխատել երեխաների հետ:</p>
+
+        <p>Մենք առաջարկում ենք նաև դասեր ռուսերեն լեզվով և պատրաստում ենք տարբեր դպրոցական առարկաների համար: Մեր անգլերենի դասընթացները հասանելի են տարբեր մակարդակներում՝ համապատասխանելու ձեր կարիքներին:</p>
+    </div>
+
+    <footer>
+        <h2>Կոնտակտներ</h2>
+        <a href="https://wa.me/37493243837">WhatsApp +37493243837</a>
+        <a href="viber://chat?number=+37493243837">Viber +37493243837</a>
+        <div class="highlight-text">We are waiting for you!</div>
+    </footer>
 </body>
 </html>
